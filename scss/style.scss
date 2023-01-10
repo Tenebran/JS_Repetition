@@ -1,4 +1,31 @@
-body {
-  background-color: rgb(27, 27, 27);
-  color: #ffff;
+#small {
+  background-color: rgb(193, 162, 223);
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+#medium {
+  background-color: rgb(142, 86, 197);
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+}
+
+#big {
+  background-color: rgb(66, 5, 128);
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin: 50px auto;
+  width: 300px;
+  height: 300px;
 }
