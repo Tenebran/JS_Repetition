@@ -86,13 +86,17 @@ console.log(
 const nums = [23, 56, 34, 1, 67, 12, 3]; // по возврастанию
 
 for (let j = 0; j < nums.length - 1; j++) {
+  let isSorted = true;
   for (let index = 0; index < nums.length - 1 - j; index++) {
     if (nums[index] > nums[index + 1]) {
-      const temp = nums[index];
-      nums[index] = nums[index + 1];
-      nums[index + 1] = temp;
+      isSorted = false;
+      [nums[index + 1], nums[index]] = [nums[index], nums[index + 1]]; // деструктуризация
+      // const temp = nums[index];
+      // nums[index] = nums[index + 1];
+      // nums[index + 1] = temp;
     }
   }
+  if (isSorted) break;
 }
 //O(n2 - 2n)
 console.log(nums);
